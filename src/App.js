@@ -1,6 +1,7 @@
 import React from 'react';
+import Header from './pages/Header';
 function App() {
-  return (<h1>Hello world!</h1>);
+  return <Header/>;
 }
 
 export default App;
