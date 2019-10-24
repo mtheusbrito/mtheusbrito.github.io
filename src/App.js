@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './pages/Header';
+import Header from './pages/Home';
 import GlobalStyle from './styles/global';
 function App() {
   return (
