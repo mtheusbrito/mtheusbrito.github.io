@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import { Container, Button} from './styles';
+import { FaAngleDown } from "react-icons/fa";
 
 const partOptions = {
     particles: {
@@ -26,13 +27,13 @@ export default class Header extends Component {
             <Particles params={partOptions}/>
             <section>
                 <div >
-                I aê, <span>Matheus Brito</span> aqui!
+                <span>Matheus Brito</span>
                 <br/>
                 Full-stack web developer.
                 </div>
              </section>
 
-            <a href="#">Trabalhos recentes</a>
+            <a href="#">Mais informações</a>
             </Container>);
     }
 }

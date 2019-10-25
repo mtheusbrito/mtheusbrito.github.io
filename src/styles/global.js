@@ -7,10 +7,14 @@ export default createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
 }
+body > #root {
+  height: 100vh;
+}
 body{
     -webkit-font-smoothing: antialiased;
-    
+
 }
+
 body, input, button{
     font: 16px Roboto, sans-serif;
 }

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
     color: #FFF;
     background: #252934;;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -40,9 +40,9 @@ export const Container = styled.section`
     }
    }
    a{
-       text-decoration:none;
-       color:#FFF;
-       z-index:999;
+    text-decoration:none;
+    color:#FFF;
+    z-index:999;
     padding: 10px 20px;
     border: 2px solid #fff;
     box-sizing: inherit;

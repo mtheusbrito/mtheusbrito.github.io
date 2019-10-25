@@ -1,10 +1,13 @@
 import React from 'react';
-import Header from './pages/Home';
+import Home from './pages/Home';
 import GlobalStyle from './styles/global';
+import Sobre from './pages/Sobre';
+
 function App() {
   return (
     <React.Fragment>
-      <Header />
+      <Home />
+      {/* <Sobre/> */}
       <GlobalStyle />
     </React.Fragment>);
 }
