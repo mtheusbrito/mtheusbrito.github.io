@@ -36,7 +36,7 @@ export const Container = styled.section`
         pointer-events: none;
     }
     span{
-        color: #E31B6D;
+        color: #00ff5f;
     }
    }
    a{
@@ -51,5 +51,15 @@ export const Container = styled.section`
     transition: all .5s;
     cursor: pointer;
    }
+
+`;
+
+export const MessageFooter = styled.div`
+position: fixed;
+width:100%;
+bottom:0;
+z-index:2;
+right:0;
+/* left:0; */
 
 `;
