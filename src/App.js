@@ -12,6 +12,10 @@ class App extends React.Component {
     handleNavbar = () => {
         this.setState({ navbarOpen: !this.state.navbarOpen });
     };
+
+    componentDidMount(){
+
+    }
     render() {
         return (
             <React.Fragment>
@@ -20,7 +24,7 @@ class App extends React.Component {
                     handleNavbar={this.handleNavbar}
                 />
                 <Home />
-                {/* <Sobre/> */}
+                <Sobre/>
                 <Footer />
                 <GlobalStyle />
             </React.Fragment>

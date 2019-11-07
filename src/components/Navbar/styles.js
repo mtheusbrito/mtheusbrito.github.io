@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
 
 export const Container = styled(animated.nav)`
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
-    /* background: #2d3436; */
-    background: transparent;
+
+    /* background: transparent; */
     z-index: 1;
     font-size: 1.0rem;
 `;

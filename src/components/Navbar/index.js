@@ -24,7 +24,7 @@ const Navbar = props => {
                     <Brand />
                     <NavLinks style={linkAnimation}>
                         <a href="/">Inicio</a>
-                        <a href="/">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                         <a href="/">Stack</a>
                         <a href="/">Projetos</a>
                         <a href="/">Contato</a>
