@@ -1,9 +1,16 @@
 import React from 'react';
 import Home from './pages/Home';
 import GlobalStyle from './styles/global';
-import Sobre from './pages/Sobre';
 import Navbar from './components/Navbar';
 import Footer from './pages/Footer';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+// paginas
+import Sobre from './pages/Sobre';
+import Stack from './pages/Stack';
+import Projetos from './pages/Projetos';
+
+import Contato from './pages/Contato';
 
 class App extends React.Component {
     state = {
@@ -14,7 +21,9 @@ class App extends React.Component {
     };
 
     componentDidMount(){
-
+        AOS.init({
+            duration : 1000
+          })
     }
     render() {
         return (
@@ -25,7 +34,10 @@ class App extends React.Component {
                 />
                 <Home />
                 <Sobre/>
-                <Footer />
+                <Stack/>
+                <Projetos/>
+                <Contato/>
+                {/* <Footer /> */}
                 <GlobalStyle />
             </React.Fragment>
         );

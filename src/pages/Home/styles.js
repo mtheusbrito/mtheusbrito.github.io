@@ -5,11 +5,16 @@ export const Container = styled.section`
     color: #FFF;
     background: #252934;;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+
     justify-content:center;
     align-items:center;
+    .particles{
+        max-width: 100%;
+
+    }
     > div{
     position:absolute;
     top:0;

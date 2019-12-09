@@ -25,9 +25,9 @@ const Navbar = props => {
                     <NavLinks style={linkAnimation}>
                         <a href="/">Inicio</a>
                         <a href="#sobre">Sobre</a>
-                        <a href="/">Stack</a>
-                        <a href="/">Projetos</a>
-                        <a href="/">Contato</a>
+                        <a href="#stack">Stack</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#contato">Contato</a>
                     </NavLinks>
                     <BurgerWrapper>
                         <BurgerMenu

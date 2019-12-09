@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
@@ -14,9 +14,16 @@ body > #root {
   background: #252934;
 
 }
+a:hover{
+    text-decoration:none!important;
+    color:#00ff5f!important;
+}
 body{
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
+
+
+
 
 }
 
@@ -24,4 +31,18 @@ body, input, button{
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
 }
+
+#root{
+    >section{
+        >#titulo{
+            @media (max-width:768px) {
+            font-size: 1.8rem;
+            }
+        }
+    }
+
+
+}
+
+
 `;
