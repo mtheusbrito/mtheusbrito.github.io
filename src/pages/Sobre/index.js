@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import avatar from './../../assets/avatar.JPG';
+import avatar from './../../assets/new.jpg';
 import { Container } from './styles';
 
 import {
@@ -14,12 +14,12 @@ export default class Sobre extends Component {
     render() {
         return (
             <Container id="sobre">
-                <h1 id="titulo">Sobre</h1>
+                <h1 id="titulo" data-aos="fade-right">Sobre</h1>
                 <div id="content">
-                    <div id="avatar">
-                        <img src={avatar} />
+                    <div id="avatar" >
+                        <img src={avatar}  className="rounded-circle"/>
                     </div>
-                    <div id="apresentacao">
+                    <div id="apresentacao" className="mt-5">
                         <p>
                             Graduado em Sistemas de Informação pela <a target="_blank" href="www.redentor.edu.br/">Uniredentor</a> em 2018. <br></br>Tenho grande
                             interesse na resolução de problemas cotidianos através da tecnologia, sou um

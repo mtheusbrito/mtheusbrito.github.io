@@ -53,12 +53,10 @@ export const Container = styled.section`
     padding: 30px;
     height: 100vh; */
         #avatar {
-            padding: 20px;
+
             > img {
-                transform: rotate(90deg);
-                border-radius: 50%;
-                width: 150px;
-                height: 150px;
+                width: 160px;
+    height: 150px;
             }
         }
         #apresentacao {

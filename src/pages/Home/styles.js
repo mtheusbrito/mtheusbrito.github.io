@@ -11,10 +11,7 @@ export const Container = styled.section`
 
     justify-content:center;
     align-items:center;
-    .particles{
-        max-width: 100%;
 
-    }
     > div{
     position:absolute;
     top:0;

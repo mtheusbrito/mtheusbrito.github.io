@@ -37,7 +37,6 @@ class App extends React.Component {
                 <Stack/>
                 <Projetos/>
                 <Contato/>
-                {/* <Footer /> */}
                 <GlobalStyle />
             </React.Fragment>
         );

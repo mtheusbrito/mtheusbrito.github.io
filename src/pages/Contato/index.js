@@ -77,7 +77,7 @@ export default class Contato extends React.Component {
         return (
             <Container id="contato">
 
-                <h1 id="titulo">Contato</h1>
+                <h1 id="titulo" data-aos="fade-right">Contato</h1>
                 <div id="content">
                     <p className="lead">
                         Fique a vontade para me mandar uma mensagem sobre
@@ -177,7 +177,7 @@ export default class Contato extends React.Component {
                                         <p className="mb-0">
                                             <FaWhatsapp
                                                 size={16}
-                                                className="mr-3"
+                                                className="mr-2"
                                             ></FaWhatsapp>
                                             <strong>
                                                 <a
@@ -193,7 +193,7 @@ export default class Contato extends React.Component {
                                         <p className="mb-0">
                                             <FaEnvelope
                                                 size={16}
-                                                className="mr-3"
+                                                className="mr-2"
                                             ></FaEnvelope>
                                             <strong>
                                                 <a
@@ -209,7 +209,7 @@ export default class Contato extends React.Component {
                                         <p className="mb-0">
                                             <FaMapMarkerAlt
                                                 size={16}
-                                                className="mr-3"
+                                                className="mr-2"
                                             ></FaMapMarkerAlt>
                                             <strong>
                                                 Avenida Zulamith Bittencourt n°:
@@ -222,7 +222,7 @@ export default class Contato extends React.Component {
                                         <p className="mb-0">
                                             <FaCity
                                                 size={16}
-                                                className="mr-3"
+                                                className="mr-2"
                                             ></FaCity>
                                             <strong>
                                                 Itaperuna - RJ, 28300-000.

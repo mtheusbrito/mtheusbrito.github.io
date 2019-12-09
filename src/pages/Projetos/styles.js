@@ -48,6 +48,7 @@ export const Container = styled.section`
 
     .card-projetos{
         background: #252934;
+        border-radius: 0;
     }
     .img-projetos{
         max-width: 380px;

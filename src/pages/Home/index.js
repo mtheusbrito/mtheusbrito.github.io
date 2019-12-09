@@ -1,44 +1,77 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
-import { Container, Button} from './styles';
-import { FaAngleDown } from "react-icons/fa";
+import { Container, Button } from './styles';
+import { FaAngleDown } from 'react-icons/fa';
 
 const partOptions = {
+
     particles: {
         number: {
-            value: 50
+            value: 160,
+            density: {
+                enable: false
+            }
         },
         size: {
-            value: 3
+            value: 3,
+            random: true,
+            anim: {
+                speed: 4,
+                size_min: 0.3
+            }
+        },
+        line_linked: {
+            enable: false
+        },
+        move: {
+            random: true,
+            speed: 1,
+            direction: "top",
+            out_mode: "out"
         }
     },
     interactivity: {
         events: {
             onhover: {
                 enable: true,
-                mode: "repulse"
+                mode: "bubble"
             },
-            // onresize: {
-            //     enable: true,
-            //     density_auto: true,
-            //     density_area: 5 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
-            //   }
+            onclick: {
+                enable: true,
+                mode: "repulse"
+            }
+        },
+        modes: {
+            bubble: {
+                distance: 250,
+                duration: 2,
+                size: 0,
+                opacity: 0
+            },
+            repulse: {
+                distance: 400,
+                duration: 4
+            }
         }
     }
-}
+};
 export default class Header extends Component {
     render() {
-        return (<Container>
-            <Particles params={partOptions} className="particles"/>
-            <section>
-                <div data-aos="fade-right">
-                <span>Matheus Brito</span>
-                <br/>
-                Full-stack web developer.
-                </div>
-             </section>
+        return (
+            <Container>
+                <Particles params={partOptions} className="particles" />
+                <section>
+                    <div data-aos="fade-right">
+                        <span>Matheus Brito</span>
+                        <br />
+                        Full-stack web developer.
+                    </div>
+                </section>
 
-            <a data-aos="fade-left" href="#sobre">Mais informações</a>
-            </Container>);
+                <a data-aos="fade-left" href="#sobre">
+                    Mais informações
+                </a>
+            </Container>
+        );
     }
 }
