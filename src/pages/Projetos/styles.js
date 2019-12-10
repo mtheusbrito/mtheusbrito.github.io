@@ -12,7 +12,7 @@ export const Container = styled.section`
     #titulo {
         font-weight: bold;
         font-size: 2.6rem;
-        padding: 3rem 3rem 0 3rem;
+        padding: 3rem 3rem 0 2rem;
         position: relative;
         /* color: #252934; */
         text-transform: uppercase;
@@ -20,7 +20,7 @@ export const Container = styled.section`
     #titulo::after {
         position: absolute;
         content: '';
-        margin-left: 3%;
+        margin-left: 2.6%;
         height: 6px;
         bottom: -4px;
         /* margin: 0 auto; */
@@ -37,7 +37,7 @@ export const Container = styled.section`
 
         @media (max-width: 768px) {
         width: 70%;
-        margin-left: 12%;
+        margin-left: 8%;
 
     }
     }

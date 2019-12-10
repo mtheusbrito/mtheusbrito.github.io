@@ -21,7 +21,7 @@ export default class Sobre extends Component {
                     </div>
                     <div id="apresentacao" className="mt-5">
                         <p>
-                            Graduado em Sistemas de Informação pela <a target="_blank" href="www.redentor.edu.br/">Uniredentor</a> em 2018. <br></br>Tenho grande
+                            Graduado em Sistemas de Informação pela <a target="_blank" href="www.redentor.edu.br/"><b>UniRedentor</b></a> em 2018. <br></br>Tenho grande
                             interesse na resolução de problemas cotidianos através da tecnologia, sou um
                             programador determinado e estudioso, além da
                             versatilidade de ferramentas, apresento constância

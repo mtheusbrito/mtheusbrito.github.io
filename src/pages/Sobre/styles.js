@@ -6,7 +6,7 @@ export const Container = styled.section`
     #titulo{
     font-weight: bold;
     font-size: 2.6rem;
-    padding: 3rem 3rem 0 3rem;
+    padding: 3rem 3rem 0 2rem;
     position: relative;
     color: #252934;
     text-transform: uppercase;
@@ -15,7 +15,7 @@ export const Container = styled.section`
 
     position: absolute;
     content: '';
-    margin-left: 3%;
+    margin-left: 2.4%;
     height: 6px;
     bottom: -4px;
     /* margin: 0 auto; */
@@ -32,7 +32,7 @@ export const Container = styled.section`
 
     @media (max-width: 768px) {
         width: 36%;
-        margin-left: 12%;
+        margin-left: 8%;
 
     }
     }
@@ -56,7 +56,10 @@ export const Container = styled.section`
 
             > img {
                 width: 160px;
-    height: 150px;
+                height: 150px;
+                @media (max-width:768px) {
+                    width:120px!important;
+                    height:110px!important;                }
             }
         }
         #apresentacao {
@@ -67,7 +70,7 @@ export const Container = styled.section`
                 font-size: 19px;
                 line-height: 38px;
                 >a{
-                    color:#00ff5f!important;
+                    color:#161b3d!important;
                 }
 
                 @media (max-width: 768px) {

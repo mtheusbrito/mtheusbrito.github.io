@@ -172,7 +172,7 @@ export default class Contato extends React.Component {
                                     src="https://maps.google.com.br/maps?q=-21.201065-41.894854&output=embed&dg=oo"
                                     className="iframe-resp"
                                 ></iframe>
-                                <ul className="list-unstyled p-2">
+                                <ul className="list-unstyled p-2 inf-contato">
                                     <li>
                                         <p className="mb-0">
                                             <FaWhatsapp

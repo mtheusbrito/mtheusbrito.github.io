@@ -64,7 +64,7 @@ export default class Stack extends React.Component {
                 <section>
                     <h1 id="titulo" data-aos="fade-right">Stack</h1>
                     <div id="content">
-                        <Row className="m-3 text-center">
+                        <Row className="p-4 text-center mt-5 row-projetos">
                             <Col xs="6" sm="4" className="mb-5" data-aos="zoom-out-up">
                                 <a href="https://www.java.com/pt_BR/"  target="_blank" title="Java"><DiJava size={130} color="#212529" className="link-stack bd-placeholder-img rounded-circle bg-white p-3"></DiJava></a>
                             <p className="mt-2 text-uppercase font-weight-bold">Java</p>
