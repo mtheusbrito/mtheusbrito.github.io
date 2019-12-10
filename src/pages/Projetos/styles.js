@@ -36,8 +36,8 @@ export const Container = styled.section`
         transition: 0.5s;
 
         @media (max-width: 768px) {
-        width: 70%;
-        margin-left: 8%;
+        width: 79%;
+        margin-left: 2rem;
 
     }
     }

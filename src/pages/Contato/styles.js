@@ -37,7 +37,7 @@ export const Container = styled.section`
 
         @media (max-width: 768px) {
         width: 48%;
-        margin-left: 8%;
+        margin-left: 2rem;
 
     }
     }
