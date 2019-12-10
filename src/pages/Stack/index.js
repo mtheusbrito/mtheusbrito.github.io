@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from './styles';
 import { Col, Row} from 'reactstrap';
 import Particles from 'react-particles-js';
-import {DiJava, DiJavascript1, DiNodejs, DiHtml5, DiCss3, DiAndroid, DiMysql,DiFirebase, DiEclipse, DiBootstrap, DiGit, DiLinux, DiSqllite} from 'react-icons/di';
+import {DiJava, DiJavascript1, DiNodejs, DiHtml5, DiCss3, DiAndroid, DiMysql,DiFirebase, DiEclipse, DiBootstrap, DiGit, DiLinux, DiSqllite, DiReact} from 'react-icons/di';
 const partOptions = {
 
     particles: {
@@ -76,7 +76,11 @@ export default class Stack extends React.Component {
                             <Col xs="6" sm="4" className="mb-5" data-aos="zoom-out-up">
                                 <a href="https://nodejs.org/en/"  target="_blank" title="NodeJs"><DiNodejs size={130} color="#212529" className="link-stack -placeholder-img rounded-circle bg-white p-3"></DiNodejs></a>
                                 <p className="mt-2 text-uppercase font-weight-bold">NodeJS</p>
-                                </Col>
+                            </Col>
+                            <Col xs="6" sm="4" className="mb-5" data-aos="zoom-out-up">
+                                <a href="https://pt-br.reactjs.org/"  target="_blank" title="React"><DiReact size={130} color="#212529" className="link-stack -placeholder-img rounded-circle bg-white p-3"></DiReact></a>
+                                <p className="mt-2 text-uppercase font-weight-bold">React</p>
+                            </Col>
                             <Col xs="6" sm="4" className="mb-5" data-aos="zoom-out-up"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5"  target="_blank" title="Html5"><DiHtml5 size={130} color="#212529" className="link-stack bd-placeholder-img rounded-circle bg-white p-3"></DiHtml5></a>
                             <p className="mt-2 text-uppercase font-weight-bold text-center">HTML5</p>
                             </Col>

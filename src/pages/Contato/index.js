@@ -4,9 +4,8 @@ import { Container } from './styles';
 import { FaWhatsapp, FaMapMarkerAlt, FaCity, FaEnvelope } from 'react-icons/fa';
 import * as emailjs from 'emailjs-com';
 import SweetAlert from 'sweetalert2-react';
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 import {
     Button,
@@ -36,15 +35,7 @@ export default class Contato extends React.Component {
             from_name: email,
             to_name: 'gmail',
             subject: subject,
-            message_html:
-                'Nome: ' +
-                name +
-                '\n' +
-                'Assunto: ' +
-                subject +
-                '\n' +
-                'Mensagem: ' +
-                message,
+            message_html:'Nome: ' + name + '\n' +   'Assunto: ' + subject + '\n' + 'Mensagem: ' +  message,
         };
         emailjs.send(
             'gmail',
@@ -58,7 +49,7 @@ export default class Contato extends React.Component {
             'Sucesso!',
             'Recebi sua mensagem, assim que possível te responderei!',
             'success'
-          )
+        );
     }
     resetForm() {
         this.setState({
@@ -76,8 +67,9 @@ export default class Contato extends React.Component {
     render() {
         return (
             <Container id="contato">
-
-                <h1 id="titulo" data-aos="fade-right">Contato</h1>
+                <h1 id="titulo" data-aos="fade-right">
+                    Contato
+                </h1>
                 <div id="content">
                     <p className="lead">
                         Fique a vontade para me mandar uma mensagem sobre
@@ -144,89 +136,48 @@ export default class Contato extends React.Component {
                                         Descreva aqui o seu problema,
                                         encontrarei uma solução!
                                     </Label>
-                                    <Input
-                                        type="textarea"
-                                        name="message"
-                                        required
-                                        className="text-dark"
-                                        value={this.state.message}
-                                        placeholder="Descreva aqui... "
-                                        onChange={this.handleChange.bind(
-                                            this,
-                                            'message'
-                                        )}
-                                    />
+                                    <Input type="textarea" name="message"  required className="text-dark" value={this.state.message} placeholder="Descreva aqui... "onChange={this.handleChange.bind( this, 'message')} />
                                 </FormGroup>
-                                <Button
-                                    variant="primary"
-                                    className="button-form"
-                                    type="submit"
-                                >
-                                    Enviar
-                                </Button>
+                                <Button variant="primary"className="button-form"  type="submit">Enviar</Button>
                             </Form>
                         </Col>
                         <Col md="4">
                             <div id="localizacao">
-                                <iframe
-                                    src="https://maps.google.com.br/maps?q=-21.201065-41.894854&output=embed&dg=oo"
-                                    className="iframe-resp"
+                                <iframe src="https://maps.google.com.br/maps?q=-21.201065-41.894854&output=embed&dg=oo" className="iframe-resp"
                                 ></iframe>
                                 <ul className="list-unstyled p-2 inf-contato">
                                     <li>
                                         <p className="mb-0">
-                                            <FaWhatsapp
-                                                size={16}
-                                                className="mr-2"
-                                            ></FaWhatsapp>
+                                            <FaWhatsapp size={16} className="mr-2" ></FaWhatsapp>
                                             <strong>
-                                                <a
-                                                    className="link-contato"
-                                                    href="https://wa.me/5522999979775?text=sua%20mensagem"
-                                                >
+                                                <a className="link-contato" href="https://wa.me/5522999979775?text=sua%20mensagem" >
                                                     (22) 999979775
                                                 </a>
                                             </strong>
                                         </p>
                                     </li>
                                     <li>
-                                        <p className="mb-0">
-                                            <FaEnvelope
-                                                size={16}
-                                                className="mr-2"
-                                            ></FaEnvelope>
+                                        <p className="mb-1">
+                                            <FaEnvelope size={16} className="mr-2"></FaEnvelope>
                                             <strong>
-                                                <a
-                                                    className="link-contato"
-                                                    href="mailto:matheusbritodasilva@gmail.com"
-                                                >
+                                                <a className="link-contato"  href="mailto:matheusbritodasilva@gmail.com">
                                                     matheusbritodasilva@gmail.com
                                                 </a>
                                             </strong>
                                         </p>
                                     </li>
                                     <li>
-                                        <p className="mb-0">
-                                            <FaMapMarkerAlt
-                                                size={16}
-                                                className="mr-2"
-                                            ></FaMapMarkerAlt>
-                                            <strong>
-                                                Avenida Zulamith Bittencourt n°:
-                                                244. Cond. São José, Apt:101 -
-                                                Centro.
-                                            </strong>
+                                        <p className="mb-1">
+                                            <FaMapMarkerAlt size={16} className="mr-2"  ></FaMapMarkerAlt>
+                                            <strong> Avenida Zulamith Bittencourt n°: 244. Cond. São José, Apt:101 -Centro.</strong>
                                         </p>
                                     </li>
                                     <li>
-                                        <p className="mb-0">
-                                            <FaCity
-                                                size={16}
-                                                className="mr-2"
-                                            ></FaCity>
+                                        <p className="mb-1">
+                                            <FaCity  size={16}  className="mr-2"></FaCity>
                                             <strong>
                                                 Itaperuna - RJ, 28300-000.
-                                            </strong>{' '}
+                                            </strong>
                                         </p>
                                     </li>
                                 </ul>

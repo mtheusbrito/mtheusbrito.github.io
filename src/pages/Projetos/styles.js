@@ -26,7 +26,7 @@ export const Container = styled.section`
         /* margin: 0 auto; */
         left: 0;
         right: 0;
-        width: 50%;
+        width: 46%;
         background: #00ff5f;
         -o-transition: 0.5s;
         -ms-transition: 0.5s;
