@@ -4,6 +4,7 @@ import { Container, FlexContainer, NavLinks, BurgerWrapper } from './styles';
 import Brand from './../Brand';
 import BurgerMenu from './../BurgerMenu';
 import CollapseMenu from '../CollapseMenu';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 const Navbar = props => {
     const barAnimation = useSpring({
         from: { transform: 'translate3d(0, -10rem, 0)' },
@@ -23,11 +24,11 @@ const Navbar = props => {
                 <FlexContainer>
                     <Brand />
                     <NavLinks style={linkAnimation}>
-                        <a href="/">Inicio</a>
-                        <a href="#sobre">Sobre</a>
-                        <a href="#stack">Stack</a>
-                        <a href="#projetos">Projetos</a>
-                        <a href="#contato">Contato</a>
+                        <AnchorLink  href="/">Inicio</AnchorLink>
+                        <AnchorLink   href="#sobre">Sobre</AnchorLink>
+                        <AnchorLink   href="#stack">Stack</AnchorLink>
+                        <AnchorLink  href="#projetos">Projetos</AnchorLink>
+                        <AnchorLink  href="#contato">Contato</AnchorLink>
                     </NavLinks>
                     <BurgerWrapper>
                         <BurgerMenu

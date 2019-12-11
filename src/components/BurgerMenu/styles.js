@@ -10,9 +10,9 @@ export const Wrapper = styled.div`
     background: #00ff5f;
     display: block;
     position: relative;
-    width: 3rem;
-    height: .3rem;
-    margin-bottom: .7rem;
+    width: 2rem;
+    height: .2rem;
+    margin-bottom: 0.5rem;
     transition: all ease-in-out 0.2s;
   }
 

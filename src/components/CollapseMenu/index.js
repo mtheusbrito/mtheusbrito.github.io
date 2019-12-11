@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {CollapseWrapper, NavLinks} from './styles';
 import { useSpring, animated } from 'react-spring';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 const CollapseMenu = (props) => {
     const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
 
@@ -15,11 +16,11 @@ const CollapseMenu = (props) => {
         }}
         >
           <NavLinks>
-            <li><a href="/" onClick={props.handleNavbar}>Inicio</a></li>
-            <li><a href="#sobre" onClick={props.handleNavbar}>Sobre</a></li>
-            <li><a href="#stack" onClick={props.handleNavbar}>Stack</a></li>
-            <li><a href="#stack" onClick={props.handleNavbar}>Projetos</a></li>
-            <li><a href="#stack" onClick={props.handleNavbar}>Contato</a></li>
+            <li><AnchorLink href="#" onClick={props.handleNavbar}>Inicio</AnchorLink></li>
+            <li><AnchorLink href="#sobre" onClick={props.handleNavbar}>Sobre</AnchorLink></li>
+            <li><AnchorLink href="#stack" onClick={props.handleNavbar}>Stack</AnchorLink></li>
+            <li><AnchorLink href="#stack" onClick={props.handleNavbar}>Projetos</AnchorLink></li>
+            <li><AnchorLink href="#stack" onClick={props.handleNavbar}>Contato</AnchorLink></li>
           </NavLinks>
         </CollapseWrapper>
       );

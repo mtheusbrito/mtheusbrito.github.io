@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import { Container, Button } from './styles';
-import { FaAngleDown } from 'react-icons/fa';
+// import { FaAngleDown } from 'react-icons/fa';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const partOptions = {
 
@@ -68,9 +69,9 @@ export default class Header extends Component {
                     </div>
                 </section>
 
-                <a data-aos="fade-left" href="#sobre">
+                <AnchorLink data-aos="fade-left" href="#sobre">
                     Mais informações
-                </a>
+                </AnchorLink>
             </Container>
         );
     }

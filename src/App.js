@@ -24,7 +24,9 @@ class App extends React.Component {
         AOS.init({
             duration : 1000
           })
+          window.onscroll = () => this.setState({navbarOpen: false})
     }
+
     render() {
         return (
             <React.Fragment>
