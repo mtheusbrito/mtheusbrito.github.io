@@ -9,6 +9,7 @@ const CollapseMenu = (props) => {
     if (props.navbarState === true) {
       return (
         <CollapseWrapper style={{
+
           transform: open.interpolate({
             range: [0, 0.2, 0.3, 1],
             output: [0, -20, 0, -200],
