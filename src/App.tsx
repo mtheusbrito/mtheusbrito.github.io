@@ -9,7 +9,7 @@ import { GlobalStyle } from './styles/global';
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter basename={`/`}>
+      <BrowserRouter basename="/">
         <Router />
       </BrowserRouter>
       <GlobalStyle />

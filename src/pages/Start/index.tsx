@@ -18,7 +18,7 @@ const Start: React.FC = () => {
             que eu tomo, mas ninguém vê os tombis que eu levo!
           </span>
           <NavLink to="/about" title="Saiba mais">
-            Um pouco sobre mim <FaArrowRight/>
+            Um pouco sobre mim  <FaArrowRight/>
           </NavLink>
         </div>
       </Content>
