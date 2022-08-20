@@ -1,9 +1,9 @@
 {
-  "name": "dev-portfolio",
+  "name": "mtheusbrito.github.io",
+  "homepage": ".",
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
