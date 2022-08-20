@@ -136,7 +136,6 @@ Error generating stack: `+o.message+`
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   background: ${e=>e.theme["gray-900"]};
   color: ${e=>e.theme["gray-300"]};
